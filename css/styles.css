@@ -1,0 +1,406 @@
+
+:root {
+    --main-color: #fff;
+    --second-color: #2E2F42;
+    --paragraph-color: #434455;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--second-color);
+    background: #FFFFFF;
+}
+
+.container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+
+.list {
+    list-style: none;
+ }
+
+ .link {
+    text-decoration: none;
+ }
+
+ .title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-align: center;
+ }
+ 
+ .subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--second-color); 
+ }
+
+ .paragraph {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--paragraph-color);  
+ }
+
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  .current:visited {
+    color: #4D5AE5;
+  }
+  /* ----------- header ----------- */
+
+  .header {
+    border-bottom: 1px solid #E7E9FC;
+    padding: 24px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.header-nav {
+    display: flex;
+    gap: 76px;
+}
+.header-logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2E2F42;
+}
+
+.header-logo span {
+    color: #4D5AE5;
+}
+
+.header-list {
+}
+
+.header-adress-list {
+    display: flex;
+    gap: 40px
+}
+
+.header-item {
+}
+.header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: #404BBF;
+}
+
+.header-adress {
+}
+.header-list {
+    display: flex;
+    gap: 40px;
+}
+
+.header-contacts {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--paragraph-color);
+}
+
+.header-tel {
+}
+
+.header-contacts:hover,
+.header-contacts:focus {
+    color: #404BBF;
+}
+
+
+/* ----------- main ----------- */
+
+.main {
+    background: #2E2F42;
+    padding: 188px 0;
+}
+
+.main-container {
+   
+   
+}
+
+.main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--main-color);
+    max-width: 496px;
+    margin: 0 auto;
+      
+}
+.main-btn {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: #FFFFFF;
+    background: #4D5AE5;
+    display: block;
+    margin: 0 auto; 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-top: 48px;
+    border: none
+}
+.main-btn:hover,
+.main-btn:focus {
+    color: #FFFFFF;
+    background: #404BBF;
+}
+
+/* ----------- skills ----------- */
+
+.skills {
+    padding: 120px 0;
+}
+
+.skills-list {
+    display: flex;
+    gap: 24px;
+    
+}
+
+.skills-item {
+    max-width: 264px;
+}
+
+
+.skills-subtitle { 
+    margin-bottom: 8px;
+}
+.skills-item-text {
+ 
+}
+
+
+/* ----------- work ----------- */
+
+.work {
+    padding-bottom: 120px;
+}
+.work-title {
+    color: var(--second-color);    
+    margin-bottom: 72px;
+}
+.work-list {
+    display: flex; 
+    gap: 24px;
+}
+.work-item {
+    width: calc((100% - 48px) / 3);
+}
+
+.work-container {
+}
+
+/* ----------- team ----------- */
+
+.team {
+    background: #F4F4FD;
+    padding: 120px 0;
+}
+
+.team-container {
+    
+}
+
+.team-title {
+    color: var(--second-color);
+    margin-bottom: 72px; 
+}
+
+.team-content {
+    padding: 32px 16px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+}
+.team-item {
+    width: calc((100% - 72px) / 4);
+    background: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+    }
+.team-item-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.20;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--second-color);
+    margin-bottom: 8px;
+}
+.team-item-work {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--paragraph-color);    
+}
+
+/* ----------- footer ----------- */
+
+.footer {
+    background: #2E2F42;
+    padding: 100px 0;
+}
+
+.footer-container {
+    
+}
+
+.footer-logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #F4F4FD;
+}
+.footer-logo span {
+    color: #4D5AE5;
+}
+
+.footer-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+    max-width: 264px;
+    margin-top: 16px;
+}
+
+/* Portfolio Page Styles */
+
+.Portfolio {
+    padding: 120px 0;
+}
+
+.portfolio-container {
+    
+}
+
+.portfolio-content {
+    
+}
+
+.Portfolio-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.portfolio-images-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 72px;
+    gap: 24px;
+    row-gap: 48px;
+}
+
+
+.portfolio-content {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.portfolio-images-item {
+    width: calc((100% - 48px) / 3);
+    background: #FFFFFF;
+}
+
+.portfolio-images-item
+
+.portfolio-link:hover,
+.portfolio-link:focus {
+}
+
+.portfolio-subtitle{
+    margin-bottom: 8px;
+}
+
+.portfolio-item {
+}
+.portfolio-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #4D5AE5;
+    cursor: pointer;
+    background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    padding: 12px 24px;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: #FFFFFF;
+    background: #404BBF;
+    border: 1px solid;
+}
+
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+    color: #FFFFFF;
+    background: #404BBF;
+    border-color: transparent;
+}
