@@ -39,7 +39,7 @@ body {
 
  .title {
     font-size: 36px;
-    line-height: 1.11;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     text-align: center;
@@ -81,6 +81,7 @@ body {
   .header {
     border-bottom: 1px solid #E7E9FC;
     padding: 24px 0;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -279,7 +280,7 @@ body {
 }
 
 .team-content {
-    padding: 32px 16px;
+    padding: 32px 0px;
 }
 
 .team-list {
@@ -332,7 +333,7 @@ body {
 }
 
 .team-social-icon {
-    fill: #FFFFFF;
+    fill: #f4f4fd;
 }
 
 .team-social-link:is(:hover, :focus) {
@@ -347,7 +348,7 @@ body {
 /* ----------- customers ----------- */
 
 .customers {
-    padding: 126px 0 120px;
+    padding: 120px 0 120px;
 }
 .customers-container {
 }
@@ -361,23 +362,28 @@ body {
 }
 
 .customers-item {
-    
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+    fill: #8E8F99;
 }
 .customers-link {
     display: flex;
-    fill: #8E8F99;
+    
     border: 1px solid #8E8F99;
     border-radius: 4px;
+    align-items: center;
+    justify-content: center;
 }
 
 .customers-icon {
     width: 168px;
     height: 88px;
     padding: 16px 32px;
+    fill: currentColor;
 }
 
 .customers-link:is(:focus, :hover) {
-    fill: var(--pressed-color);
+    color: var(--pressed-color);
     border-color: var(--pressed-color);
 }
 
@@ -390,6 +396,7 @@ body {
 }
 
 .footer-container {
+   
 }
 
 .footer-logo {
@@ -446,6 +453,7 @@ body {
 }
 .footer-social-link {
     display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -498,11 +506,15 @@ body {
 }
 
 .portfolio-images-item {
-    width: calc((100% - 48px) / 3);
-    background: #FFFFFF;
+    
 }
 
 .portfolio-images-item
+
+.porfolio-link {
+    width: calc((100% - 48px) / 3);
+    background: #FFFFFF;
+}
 
 .portfolio-link:hover,
 .portfolio-link:focus {
@@ -533,9 +545,6 @@ body {
     background-color: var(--pressed-color);
     border: 1px solid var(--pressed-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
-.porfolio-link {
 }
 
 .portfolio-images-item:is(:focus, :hover) {
