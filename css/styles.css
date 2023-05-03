@@ -379,6 +379,7 @@ body {
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .customers-icon {
@@ -403,7 +404,11 @@ body {
 .footer-container {
     display: flex;
     align-items: baseline;
-    gap: 120px;
+    
+}
+
+.footer-content {
+    margin-right: 120px;
 }
 
 .footer-logo {
